@@ -2,6 +2,10 @@
 
 /*-------------------------------- Variables --------------------------------*/
 
+let firstValue = null;
+let secondValue = null;
+let operation = null;
+
 /*------------------------ Cached Element References ------------------------*/
 
 /*----------------------------- Event Listeners -----------------------------*/
