@@ -47,6 +47,36 @@ const renderCalculation = () => {
     totalDisplay.innerText = total;
 };
 
+const handleEqual = () => {
+    secondValue = parseFloat(totalDisplay.innerText); 
+    console.log(firstValue, secondValue);
+    renderCalculation();
+    firstValue = totalDisplay.innerText; 
+    secondValue = null; 
+    operation = null; 
+};
+
+const handleOperator = (event) => {
+    firstValue = parseFloat(totalDisplay.innerText); 
+    operation = event.target.id; 
+    totalDisplay.innerText = 0; 
+};
+
+const handleNumber = (event) => {
+    if (totalDisplay.innerText === '0') {
+        totalDisplay.innerText = event.target.innerText;
+    } else {
+        totalDisplay.innerText += event.target.innerText; 
+    }
+};
+
+const clear = () => {
+    totalDisplay.innerText = 0;
+    firstValue = null;
+    secondValue = null;
+    operation = null;
+};
+
 
 
 /*----------------------------- Event Listeners -----------------------------*/
