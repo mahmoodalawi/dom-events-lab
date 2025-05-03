@@ -18,7 +18,20 @@ const totalDisplay = document.querySelector('.display');
 totalDisplay.innerText = 0;
 
 /*-------------------------------- Functions --------------------------------*/
-
+const add = () => {
+    return firstValue + secondValue;
+};
+const subtract = () => {
+    return firstValue - secondValue;
+};
+const multiply = () => {
+    return firstValue * secondValue;
+};
+const divide = () => {
+    if (secondValue === 0) {
+        console.log("Error");
+    }
+};
 
 
 /*----------------------------- Event Listeners -----------------------------*/
