@@ -82,4 +82,11 @@ const clear = () => {
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+equalsButton.addEventListener('click', handleEqual);
+clearButton.addEventListener('click', clear);
+numbers.forEach((number) => {
+    number.addEventListener('click', handleNumber);
+});
+operationButtons.forEach((operation) => {
+    operation.addEventListener('click', handleOperator);
+});
