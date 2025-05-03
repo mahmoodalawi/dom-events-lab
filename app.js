@@ -33,6 +33,21 @@ const divide = () => {
     }
 };
 
+const renderCalculation = () => {
+    let total;
+    if (operation === 'add') {
+        total = add();
+    } else if (operation === 'subtract') {
+        total = subtract();
+    } else if (operation === 'multiply') {
+        total = multiply();
+    } else if (operation === 'divide') {
+        total = divide();
+    }
+    totalDisplay.innerText = total;
+};
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
